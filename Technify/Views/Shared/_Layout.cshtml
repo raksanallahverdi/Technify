@@ -1,30 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>ITSolution - Free Bootstrap 4 Template by Colorlib</title>
+	<title>Technify-IT Services</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel="stylesheet" href="css/animate.css">
-
-	<link rel="stylesheet" href="~/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="~/css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="~/css/magnific-popup.css">
-
-
-	<link rel="stylesheet" href="~/css/flaticon.css">
-	<link rel="stylesheet" href="~/css/style.css">
-</head>
+	<link rel="stylesheet" href="~/assets_main/css/animate.css">
+	<link rel="stylesheet" href="~/assets_main/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="~/assets_main/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="~/assets_main/css/magnific-popup.css">
+	<link rel="stylesheet" href="~/assets_main/css/flaticon.css">
+	<link rel="stylesheet" href="~/assets_main/css/style.css">
+	</head>
 <body>
 	<div class="wrap">
 		<div class="container">
 			<div class="row justify-content-between">
 				<div class="col-12 col-md d-flex align-items-center">
-					<p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="#">+00 1234 567</a> or <span class="mailus">email us:</span> <a href="#">emailsample@email.com</a></p>
+					<p class="mb-0 phone"><p>Welcome, <b>@User.Identity.Name!</b></p></p>
 				</div>
 				<div class="col-12 col-md d-flex justify-content-md-end">
 					<div class="social-media">
@@ -38,34 +34,36 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 		<div class="container">
-				<img width="200" src="~/images/2.png" alt="Alternate Text" />
-
-
-
+				<img width="200" src="~/assets_main/images/2.png" alt="Alternate Text" />
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
+				<span class="oi oi-menu"></span> Menu			
+				</button>
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a asp-action="index" asp-controller="home" class="nav-link">Home</a></li>
+					<li class="nav-item "><a asp-action="index" asp-controller="home" class="nav-link">Home</a></li>
 					<li class="nav-item"><a asp-action="index" asp-controller="about" class="nav-link">About</a></li>
 					<li class="nav-item"><a asp-action="index" asp-controller="services" class="nav-link">Services</a></li>
 					<li class="nav-item"><a asp-action="index" asp-controller="blog" class="nav-link">Blog</a></li>
 					<li class="nav-item"><a asp-action="index" asp-controller="contact" class="nav-link">Contact us</a></li>
 					<li class="nav-item cta"><a asp-action="index" asp-controller="contact" class="nav-link">Free Consultation</a></li>
+					<li class="nav-item"><a style="display:flex;gap:7px;align-items:center;" asp-action="Index" asp-controller="Profile" class="nav-link">  <span style="font-size:18px; color:blue;" class="fa fa-user"></span> My Profile</a></li>
+					<li class="nav-item">
+						<a class="nav-link" asp-controller="account" asp-action="logout">
+							<span class="fa fa-sign-out" style="font-size: 22px; color: red;"></span>
+						</a>
+					</li>
 
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- END nav -->
-@RenderBody()
 
+@RenderBody()
 
 	<footer class="ftco-footer ftco-footer-2 ftco-section">
 		<div class="container">
@@ -124,9 +122,9 @@
 				<div class="col-md-12 text-center">
 
 					<p>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					
 						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				
 					</p>
 				</div>
 			</div>
@@ -134,25 +132,24 @@
 	</footer>
 
 
-
-	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
+	<script src="~/assets_main/js/jquery.min.js"></script>
+	<script src="~/assets_main/js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="~/assets_main/js/popper.min.js"></script>
+	<script src="~/assets_main/js/bootstrap.min.js"></script>
+    <script src="~/assets_main/js/jquer<a href=" c:\users\allah\source\repos\technify\technify\views\shared\_layout.cshtml">c:\users\allah\source\repos\technify\technify\views\shared\_layout.cshtml</a>y.easing.1.3.js"></script>
+	<script src="~/assets_main/js/jquery.waypoints.min.js"></script>
+	<script src="~/assets_main/js/jquery.stellar.min.js"></script>
+	<script src="~/assets_main/js/owl.carousel.min.js"></script>
+	<script src="~/assets_main/js/jquery.magnific-popup.min.js"></script>
+	<script src="~/assets_main/js/jquery.animateNumber.min.js"></script>
+	<script src="~/assets_main/js/scrollax.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="js/google-map.js"></script>
-	<script src="js/main.js"></script>
+	<script src="~/assets_main/js/google-map.js"></script>
+	<script src="~/assets_main/js/main.js"></script>
+	@RenderSection("Scripts", false)
 
 </body>
 </html>

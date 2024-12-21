@@ -1,0 +1,45 @@
+﻿@using Technify.Models.WorkTypes;
+@model WorkTypesIndexVM
+
+<div class="row" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; padding: 20px;">
+    @if (Model != null && Model.Works.Any())
+    {
+        @foreach (var work in Model.Works)
+        {
+            <div style="
+                width: 300px;
+                border-radius: 10px;
+                border: 1px solid #ddd;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                background: #fff;
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                padding: 20px;
+                text-align: center;">
+                <h6 style="font-size: 18px; color: #333; font-weight: bold; margin-bottom: 10px;">
+                    @work.Title
+                </h6>
+                <p style="font-size: 16px; color: #555; margin-bottom: 10px;">
+                    @work.Name @work.Surname
+                </p>
+                <a asp-controller="Work" asp-action="Details" asp-route-id="@work.Id" style="
+                    margin-top: 15px;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    background-color: #007bff;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    display: inline-block;">
+                    View Details
+                </a>
+            </div>
+        }
+    }
+    else
+    {
+        <p style="font-size: 18px; color: #666; text-align: center; width: 100%;">
+            No works available for this type.
+        </p>
+    }
+</div>
